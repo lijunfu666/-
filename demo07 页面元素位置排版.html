@@ -1,0 +1,139 @@
+<html>
+     
+          <style>
+                .clearfix::after{
+                    content: '';
+                    display: inline-block;
+                    clear: both;
+                    overflow: hidden;
+                    height: 0px;
+                }
+                header{
+                    background-color: #333333;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    min-width: 1170px;
+                }
+                header .wrap{
+                    max-width: 1170px;
+                    margin: 0 auto;
+                }
+                header .logo{
+                    float: left;
+                    height: 35px;
+                    width: 130px;
+                    background: url('images/logo.png')no-repeat #d43d3d;
+                    background-size: 87px 21px;
+                }
+                header li{
+                    float: left;
+                    margin-left: 20px;
+                }
+                header a{
+                    font-size: 14px;
+                    color: #fff;
+                    height: 35px;
+                    display: inline-block;
+                }
+                header li.more{
+                    position: relative;
+                    padding-right: 12px;
+                }
+                header .more::after{
+                    content: " ";
+                    display: inline-block;
+                    position:absolute;
+                    right: 0;
+                    top: 15px;
+                    width: 12px;
+                    height: 5px;
+                    background: url("images/down_arrow.png") no-repeat center center;
+                }
+                header .more:hover::after{
+                    color: #d92f29;
+                }
+                header .more:hover::after{
+                    background:url("images/down_red_arrow.png") no-repeat center center;
+                }
+                header .register{
+                    float: right;
+                    line-height: 35px;
+                }
+                header .register a{
+                    margin-left: 18px;
+                    font-size: 12px;
+                }
+                header .register a:hover{
+                    text-decoration: underline;
+                }
+                header .register .version{
+                    background: url('images/version.png') no-repeat;
+                    background-size: cover;
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    top: 2px;
+                    margin-left: 16px;
+                    width: 14px;
+                    margin-right: 36px;
+                    height: 13px;
+                }
+
+
+
+
+
+
+
+
+          </style>
+
+
+     
+
+     <body>
+        <header>
+              <div class="wrap clearfix">
+                   <div class="logo" href="#"></div>
+                   <nav>
+                   <ul>
+                       <li><a href="https://www.360kuai.com/">首页</a></li>
+                       <li><a href="https://www.360kuai.com/">新时代</a></li>
+                       <li><a href="https://www.360kuai.com/">辟谣</a></li>
+                       <li><a href="https://www.360kuai.com/">图片</a></li>
+                       <li><a href="">汽车</a></li>
+                       <li><a href="">房产</a></li>
+                       <li><a href="">科技</a></li>
+                       <li><a href="">财经</a></li>
+                       <li><a href="">体育</a></li>
+                       <li><a href="">旅游</a></li>
+                       <li class="more"><a href="https://www.360kuai.com/">更多</a></li>
+                   </ul>
+                </nav>
+                <div class="register">
+                    <a href="login.html">登录</a>
+                    <a href="register.html" target="_blank">注册</a>
+                    <span class="version"></span>
+                </div>
+
+
+              
+
+
+
+
+
+        </header>
+
+
+
+
+
+     </body>
+
+
+
+
+</html>
